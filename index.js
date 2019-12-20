@@ -6,10 +6,10 @@ $("#js-shopping-list-form").submit( e => {
 
 $('.shopping-item-toggle').click(function() {
     event.preventDefault();
-    $('.shopping-item').closest('span').toggleClass('shopping-item__checked');
+    $(this).closest('.shopping-item-controls').siblings('.shopping-item').toggleClass('shopping-item__checked');
 });
 
 $('.shopping-item-delete').click(function() {
     event.preventDefault();
-    $('.shopping-item').toggleClass('shopping-item__checked');
+    $(this).closest('li').remove();
 });
