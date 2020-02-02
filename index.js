@@ -9,10 +9,6 @@ $('ul').on("click", '.shopping-item-toggle', function() {
     $(this).closest('.shopping-item-controls').siblings('.shopping-item').toggleClass('shopping-item__checked');
 });
 
-$('ul').on('click', '.shopping-item-delete', function() {
-    event.preventDefault();
-    $(this).closest('li').remove();
-});
 
 function allowDrop(event) {
     event.preventDefault();
